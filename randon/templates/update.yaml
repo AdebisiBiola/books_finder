@@ -1,18 +1,18 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: books-app
+  name: books-apps
 spec:
   selector:
     matchLabels:
-      app: books-app
+      app: books-apps
   template:
     metadata:
       labels:
-        app: books-app
+        app: books-apps
     spec:
       containers:
-      - name: books-app
+      - name: books-apps
         image: adebisibiola/book_application:1
         resources:
           request: 
@@ -27,11 +27,11 @@ spec:
 apiVersion: v1
 kind: Service
 metadata:
-  name: books-app
+  name: books-apps
 spec:
   type: LoadBalancer
   selector:
-    app: books-app
+    app: books-apps
   ports:
   - protocol: TCP
     port: 80
