@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
   name: books-apps
 spec:
-  replicas: 3
+  replicas: 1
   selector:
     matchLabels:
       app: books-apps
@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: books-apps
-        image: adebisibiola/book_application:1
+        image: adebisibiola/book_application:27981
         resources:
           request: 
             memory: "64Mi"
