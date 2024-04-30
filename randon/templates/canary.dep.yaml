@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: books-apps-canary
-        image: adebisibiola/book_application:1
+        image: adebisibiola/book_application:7257
         resources:
           request: 
             memory: "64Mi"
@@ -28,7 +28,7 @@ spec:
 apiVersion: v1
 kind: Service
 metadata:
-  name: books-apps-canary
+  name: books-apps-serv
 spec:
   type: LoadBalancer
   selector:
