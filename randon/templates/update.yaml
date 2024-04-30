@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: books-apps
-        image: adebisibiola/book_application:27981
+        image: adebisibiola/book_application:26416
         resources:
           request: 
             memory: "64Mi"
